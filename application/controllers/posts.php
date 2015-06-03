@@ -23,8 +23,8 @@ class Posts extends CI_Controller {
 	public function add_note()
 	{
 		// Add new post to db
-		$description = $this->input->post();
-		$this->Postit_model->add_note($description);
+		$new_post = $this->input->post();
+		$this->Postit_model->add_note($new_post);
 
 		// Reload partial of posts
 		$data["posts"] = $this->Postit_model->get_all_notes();

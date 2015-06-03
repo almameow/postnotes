@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  /*max-width: 1000px;*/
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -51,10 +51,10 @@
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%; }
+    width: 95%; }
   .column,
   .columns {
-    margin-left: 4%; }
+    margin-left: 1%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -206,8 +206,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #13e64e;
+  border-color: #009f2d; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -219,8 +219,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: #009f2d;
+  border-color: #009f2d; }
 
 
 /* Forms
@@ -237,7 +237,7 @@ select {
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
-  border: 1px solid #D1D1D1;
+  border: 1px solid #000000;
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box; }
@@ -266,7 +266,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border: 1px solid #13e64e;
   outline: 0; }
 label,
 legend {

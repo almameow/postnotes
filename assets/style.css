@@ -1,10 +1,7 @@
 body{
 	font-family: sans-serif;
 	font-weight: lighter;
-}
-a {
-	color: #000000;
-	text-decoration: none;
+	background-color: #eeeeee;
 }
 .notes{
 	width: 100%;
@@ -18,11 +15,13 @@ a {
 	vertical-align: top;
 	margin: 10px;
 	padding: 10px;
+	overflow: auto;
 }
-label, textarea{
-	display: block;
-	margin-bottom: 10px;
+.delete_note{
+	margin-bottom: 0px;
 }
-form{
-	margin-left: 10px;
+.deleteBtn{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
 }
