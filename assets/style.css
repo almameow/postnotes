@@ -1,0 +1,28 @@
+body{
+	font-family: sans-serif;
+	font-weight: lighter;
+}
+a {
+	color: #000000;
+	text-decoration: none;
+}
+.notes{
+	width: 100%;
+	margin-bottom: 30px;
+}
+.post{
+	border: 1px solid #000000;
+	width: 180px;
+	height: 180px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	padding: 10px;
+}
+label, textarea{
+	display: block;
+	margin-bottom: 10px;
+}
+form{
+	margin-left: 10px;
+}
