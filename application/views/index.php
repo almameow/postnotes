@@ -14,19 +14,12 @@
 	<script>
 		$(document).ready(function(){
 			var count = -1;
-			var paletteArray = ["(202,253,249)", "(169,249,255)", "(210,240,255)", "(153,238,236)", "(108,229,255)", "(208,255,242)", "(186,237,238)", "(187,190,242)", "(213,175,253)", "(221,173,242)", , "(255,218,240)", "(253,173,233)", "(255,130,187)", "(251,102,200)", "(251,73,144)", "(246,161,146)", "(246,176,146)", "(246,196,146)", "(246,207,146)", "(246,217,146)"];
+			var paletteArray = ["(153,182,160)", "(54,136,121)", "(42,117,149)", "(130,131,115)", "(81,65,89)"];
 
 			// All notes loaded when form is submitted
 			$(document).on("submit", "form", function(){ 
-				var randomColor = "";
-				if(count < paletteArray.length){
-					randomColor = "rgb" + paletteArray[count];
-					count++;
-				} else{
-					count = 0;
-					randomColor = "rgb" + paletteArray[count];
-					count++;
-				}
+				var randomNum = Math.floor(Math.random() * 5);
+				var randomColor = "rgb" + paletteArray[randomNum];
 
 				$("#randomColor").val(randomColor);
 
@@ -47,18 +40,19 @@
 <div class="container">
 	<div class="row">
 		<div class="nine columns">
-			<h1>Post Notes:</h1>
 			<div id="notes">
 			</div>
 		</div>
 
 		<div class="three columns">
+			<h1>Post a note:</h1>
 			<form action="/posts/add_note" method="post">
-				<label><h3>Add a note:</h3>
-					<input type="text" name="description" id="textarea" class="u-full-width">
+				<label>
+					<input type="text" name="description" id="textarea" class="u-full-width" maxlength="200">
 					<input type="hidden" name="color" id="randomColor">
 				</label>
-				<input class="button-primary" type="submit" value="Post it!">
+				<p><small>*200 character limit</small></p>
+				<input class="button-primary" type="submit" value="Go">
 			</form>
 		</div>
 	</div>

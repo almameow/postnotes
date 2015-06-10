@@ -1,21 +1,38 @@
+@font-face {
+	font-family: "TrashHand";
+	src: url('TrashHand.TTF');
+}
 body{
 	font-family: sans-serif;
 	font-weight: lighter;
-	background-color: #eeeeee;
+	background-color: #afcfce;
+	color: #0d3d47;
+}
+h1, h2, h3{
+	font-family: "TrashHand";
+	margin-top: 20px;
+}
+form p, input{
+	margin-bottom: 3px;
 }
 .notes{
 	width: 100%;
 	margin-bottom: 30px;
 }
 .post{
-	border: 1px solid #000000;
-	width: 180px;
-	height: 180px;
+	border: 1px solid #ffffff;
+	border-radius: 50px 15px 50px 30px;
+	width: 200px;
+	height: 200px;
 	display: inline-block;
 	vertical-align: top;
 	margin: 10px;
-	padding: 10px;
-	overflow: auto;
+	padding: 20px;
+	overflow: hidden;
+	color: #ffffff;
+}
+.pad-right{
+	margin-right: 40px;
 }
 .delete_note{
 	margin-bottom: 0px;
@@ -24,4 +41,7 @@ body{
 	padding: 0px;
 	margin: 0px;
 	border: 0px;
+}
+.xbox{
+	color: #ffffff;
 }

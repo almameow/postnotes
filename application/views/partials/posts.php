@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="two columns offset-by-ten columns">
 				<form class="delete_note" action="/posts/delete_note/<?= $post['id'] ?>" method="post">
-					<button class="deleteBtn" type="submit"><span class="fa fa-times fa-lg"></span></button>
+					<button class="deleteBtn" type="submit"><span class="fa fa-times fa-lg xbox"></span></button>
 				</form>
 			</div>
 		</div>
